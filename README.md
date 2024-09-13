@@ -7,8 +7,11 @@ This repository contains a collection of scripts developed collaboratively on Gi
 ### Repository Structure
 
 data_processing.py: Handles the initial data preprocessing, including cleaning and feature engineering. This script prepares the raw stock data by adjusting for splits, calculating necessary financial indicators, and normalizing the data.
+
 data_loader.py: Contains the functionality to load data into a format suitable for training the LSTM model. This includes splitting the data into training and test sets.
+
 model.py: Defines the LSTM architecture, incorporating techniques such as batch normalization, gradient clipping, and an adaptive learning rate to enhance training stability and performance.
+
 master.py: Orchestrates the process of training the model on the preprocessed data, managing the flow from data loading, model training, to saving the trained model.
 LSTM Architecture
 
