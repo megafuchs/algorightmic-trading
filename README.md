@@ -18,14 +18,21 @@ LSTM Architecture
 The model is built using an LSTM (Long Short-Term Memory) architecture, which is particularly suited for time-series prediction due to its ability to capture long-term dependencies in sequence data. Our LSTM model consists of several layers optimized for time series forecasting:
 
 Input Layer: Takes in sequences of stock prices along with other financial indicators.
+
 LSTM Layers: Processes the input data, with each layer providing a higher level of abstraction.
+
 Batch Normalization: Applied within the LSTM layers to normalize activations, thus improving the training speed and stability.
+
 Output Layer: Produces the prediction for the next day's stock price movement.
-Features and Techniques
+
+### Features and Techniques
 Gradient Clipping: Used to prevent exploding gradients, thereby ensuring stable training across batches.
+
 Adaptive Learning Rate: Implemented through the optimizer to adjust the learning rate based on training progress, enhancing the model's ability to converge to optimal weights.
+
 Batch Normalization: Helps in normalizing the input layer by adjusting and scaling activations.
-Challenges and Conclusions
+
+### Challenges and Conclusions
 
 One significant challenge encountered in this project is the inherent randomness in day trading. Despite incorporating various sophisticated features and financial indicators, our conclusions strongly suggest that predicting day-to-day stock movements is extremely challenging and, at times, too random to forecast reliably with the given features. This highlights the unpredictable nature of financial markets and the limitations of using historical data for future price predictions.
 
@@ -35,7 +42,8 @@ Clone the repository to your local machine.
 Ensure you have Python and necessary libraries installed (pandas, numpy, matplotlib, tensorflow, etc.).
 Run master.py to execute the full pipeline from data processing to model training.
 Check the outputs in the designated output directories.
-Collaborators
+
+### Collaborators
 
 This project was a collaborative effort, developed with a student-friend of mine through team contributions and version control.
 
